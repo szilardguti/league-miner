@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="10.4.000">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="10.4.000" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="read_csv" compatibility="10.4.000" expanded="true" height="68" name="Read CSV" width="90" x="45" y="85">
+        <parameter key="csv_file" value="C:\dev\repos\league-miner\data\2024_LoL_esports_match_data_from_OraclesElixir1.csv"/>
+        <parameter key="column_separators" value=";"/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="multiline_text" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="'"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value="dd/MM/yyyy HH:mm"/>
+        <parameter key="use_header_row" value="true"/>
+        <parameter key="header_row" value="1"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1250"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="ď»żgameid.true.polynominal.attribute"/>
+          <parameter key="1" value="datacompleteness.true.polynominal.attribute"/>
+          <parameter key="2" value="url.true.polynominal.attribute"/>
+          <parameter key="3" value="league.true.polynominal.attribute"/>
+          <parameter key="4" value="year.true.integer.attribute"/>
+          <parameter key="5" value="split.true.polynominal.attribute"/>
+          <parameter key="6" value="playoffs.true.integer.attribute"/>
+          <parameter key="7" value="date.true.date_time.attribute"/>
+          <parameter key="8" value="game.true.integer.attribute"/>
+          <parameter key="9" value="patch.true.real.attribute"/>
+          <parameter key="10" value="participantid.true.integer.attribute"/>
+          <parameter key="11" value="side.true.polynominal.attribute"/>
+          <parameter key="12" value="position.true.polynominal.attribute"/>
+          <parameter key="13" value="playername.true.polynominal.attribute"/>
+          <parameter key="14" value="playerid.true.polynominal.attribute"/>
+          <parameter key="15" value="teamname.true.polynominal.attribute"/>
+          <parameter key="16" value="teamid.true.polynominal.attribute"/>
+          <parameter key="17" value="champion.true.polynominal.attribute"/>
+          <parameter key="18" value="ban1.true.polynominal.attribute"/>
+          <parameter key="19" value="ban2.true.polynominal.attribute"/>
+          <parameter key="20" value="ban3.true.polynominal.attribute"/>
+          <parameter key="21" value="ban4.true.polynominal.attribute"/>
+          <parameter key="22" value="ban5.true.polynominal.attribute"/>
+          <parameter key="23" value="gamelength.true.integer.attribute"/>
+          <parameter key="24" value="result.true.integer.attribute"/>
+          <parameter key="25" value="kills.true.integer.attribute"/>
+          <parameter key="26" value="deaths.true.integer.attribute"/>
+          <parameter key="27" value="assists.true.integer.attribute"/>
+          <parameter key="28" value="teamkills.true.integer.attribute"/>
+          <parameter key="29" value="teamdeaths.true.integer.attribute"/>
+          <parameter key="30" value="doublekills.true.polynominal.attribute"/>
+          <parameter key="31" value="triplekills.true.polynominal.attribute"/>
+          <parameter key="32" value="quadrakills.true.polynominal.attribute"/>
+          <parameter key="33" value="pentakills.true.polynominal.attribute"/>
+          <parameter key="34" value="firstblood.true.integer.attribute"/>
+          <parameter key="35" value="firstbloodkill.true.integer.attribute"/>
+          <parameter key="36" value="firstbloodassist.true.polynominal.attribute"/>
+          <parameter key="37" value="firstbloodvictim.true.polynominal.attribute"/>
+          <parameter key="38" value="team kpm.true.real.attribute"/>
+          <parameter key="39" value="ckpm.true.real.attribute"/>
+          <parameter key="40" value="firstdragon.true.polynominal.attribute"/>
+          <parameter key="41" value="dragons.true.integer.attribute"/>
+          <parameter key="42" value="opp_dragons.true.integer.attribute"/>
+          <parameter key="43" value="elementaldrakes.true.polynominal.attribute"/>
+          <parameter key="44" value="opp_elementaldrakes.true.polynominal.attribute"/>
+          <parameter key="45" value="infernals.true.polynominal.attribute"/>
+          <parameter key="46" value="mountains.true.polynominal.attribute"/>
+          <parameter key="47" value="clouds.true.polynominal.attribute"/>
+          <parameter key="48" value="oceans.true.polynominal.attribute"/>
+          <parameter key="49" value="chemtechs.true.polynominal.attribute"/>
+          <parameter key="50" value="hextechs.true.polynominal.attribute"/>
+          <parameter key="51" value="dragons (type unknown).true.integer.attribute"/>
+          <parameter key="52" value="elders.true.polynominal.attribute"/>
+          <parameter key="53" value="opp_elders.true.polynominal.attribute"/>
+          <parameter key="54" value="firstherald.true.polynominal.attribute"/>
+          <parameter key="55" value="heralds.true.polynominal.attribute"/>
+          <parameter key="56" value="opp_heralds.true.polynominal.attribute"/>
+          <parameter key="57" value="firstbaron.true.polynominal.attribute"/>
+          <parameter key="58" value="barons.true.integer.attribute"/>
+          <parameter key="59" value="opp_barons.true.integer.attribute"/>
+          <parameter key="60" value="firsttower.true.polynominal.attribute"/>
+          <parameter key="61" value="towers.true.integer.attribute"/>
+          <parameter key="62" value="opp_towers.true.integer.attribute"/>
+          <parameter key="63" value="firstmidtower.true.polynominal.attribute"/>
+          <parameter key="64" value="firsttothreetowers.true.polynominal.attribute"/>
+          <parameter key="65" value="turretplates.true.polynominal.attribute"/>
+          <parameter key="66" value="opp_turretplates.true.polynominal.attribute"/>
+          <parameter key="67" value="inhibitors.true.integer.attribute"/>
+          <parameter key="68" value="opp_inhibitors.true.integer.attribute"/>
+          <parameter key="69" value="damagetochampions.true.integer.attribute"/>
+          <parameter key="70" value="dpm.true.real.attribute"/>
+          <parameter key="71" value="damageshare.true.real.attribute"/>
+          <parameter key="72" value="damagetakenperminute.true.real.attribute"/>
+          <parameter key="73" value="damagemitigatedperminute.true.polynominal.attribute"/>
+          <parameter key="74" value="wardsplaced.true.integer.attribute"/>
+          <parameter key="75" value="wpm.true.real.attribute"/>
+          <parameter key="76" value="wardskilled.true.integer.attribute"/>
+          <parameter key="77" value="wcpm.true.real.attribute"/>
+          <parameter key="78" value="controlwardsbought.true.integer.attribute"/>
+          <parameter key="79" value="visionscore.true.integer.attribute"/>
+          <parameter key="80" value="vspm.true.real.attribute"/>
+          <parameter key="81" value="totalgold.true.integer.attribute"/>
+          <parameter key="82" value="earnedgold.true.integer.attribute"/>
+          <parameter key="83" value="earned gpm.true.real.attribute"/>
+          <parameter key="84" value="earnedgoldshare.true.real.attribute"/>
+          <parameter key="85" value="goldspent.true.integer.attribute"/>
+          <parameter key="86" value="gspd.true.real.attribute"/>
+          <parameter key="87" value="total cs.true.integer.attribute"/>
+          <parameter key="88" value="minionkills.true.integer.attribute"/>
+          <parameter key="89" value="monsterkills.true.integer.attribute"/>
+          <parameter key="90" value="monsterkillsownjungle.true.integer.attribute"/>
+          <parameter key="91" value="monsterkillsenemyjungle.true.integer.attribute"/>
+          <parameter key="92" value="cspm.true.real.attribute"/>
+          <parameter key="93" value="goldat10.true.polynominal.attribute"/>
+          <parameter key="94" value="xpat10.true.polynominal.attribute"/>
+          <parameter key="95" value="csat10.true.polynominal.attribute"/>
+          <parameter key="96" value="opp_goldat10.true.polynominal.attribute"/>
+          <parameter key="97" value="opp_xpat10.true.polynominal.attribute"/>
+          <parameter key="98" value="opp_csat10.true.polynominal.attribute"/>
+          <parameter key="99" value="golddiffat10.true.polynominal.attribute"/>
+          <parameter key="100" value="xpdiffat10.true.polynominal.attribute"/>
+          <parameter key="101" value="csdiffat10.true.polynominal.attribute"/>
+          <parameter key="102" value="killsat10.true.polynominal.attribute"/>
+          <parameter key="103" value="assistsat10.true.polynominal.attribute"/>
+          <parameter key="104" value="deathsat10.true.polynominal.attribute"/>
+          <parameter key="105" value="opp_killsat10.true.polynominal.attribute"/>
+          <parameter key="106" value="opp_assistsat10.true.polynominal.attribute"/>
+          <parameter key="107" value="opp_deathsat10.true.polynominal.attribute"/>
+          <parameter key="108" value="goldat15.true.polynominal.attribute"/>
+          <parameter key="109" value="xpat15.true.polynominal.attribute"/>
+          <parameter key="110" value="csat15.true.polynominal.attribute"/>
+          <parameter key="111" value="opp_goldat15.true.polynominal.attribute"/>
+          <parameter key="112" value="opp_xpat15.true.polynominal.attribute"/>
+          <parameter key="113" value="opp_csat15.true.polynominal.attribute"/>
+          <parameter key="114" value="golddiffat15.true.polynominal.attribute"/>
+          <parameter key="115" value="xpdiffat15.true.polynominal.attribute"/>
+          <parameter key="116" value="csdiffat15.true.polynominal.attribute"/>
+          <parameter key="117" value="killsat15.true.polynominal.attribute"/>
+          <parameter key="118" value="assistsat15.true.polynominal.attribute"/>
+          <parameter key="119" value="deathsat15.true.polynominal.attribute"/>
+          <parameter key="120" value="opp_killsat15.true.polynominal.attribute"/>
+          <parameter key="121" value="opp_assistsat15.true.polynominal.attribute"/>
+          <parameter key="122" value="opp_deathsat15.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <connect from_op="Read CSV" from_port="output" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <description align="center" color="purple" colored="true" height="72" resized="true" width="318" x="65" y="13">data source:&lt;br&gt;https://www.kaggle.com/datasets/barthetur&lt;br/&gt;/league-of-legends-2024-competitive-game-dataset</description>
+    </process>
+  </operator>
+</process>
