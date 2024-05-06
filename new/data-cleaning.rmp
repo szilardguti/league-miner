@@ -13,7 +13,7 @@
     <parameter key="encoding" value="SYSTEM"/>
     <process expanded="true">
       <operator activated="true" class="read_csv" compatibility="10.4.000" expanded="true" height="68" name="Read CSV" width="90" x="45" y="85">
-        <parameter key="csv_file" value="C:\dev\repos\league-miner\data\2024_LoL_esports_match_data_from_OraclesElixir1.csv"/>
+        <parameter key="csv_file" value="C:/Users/berci/OneDrive/Dokumentumok/AltairRapidMiner/AI Studio/Local Repository/data/2024_LoL_esports_match_data_from_OraclesElixir1.csv"/>
         <parameter key="column_separators" value=";"/>
         <parameter key="trim_lines" value="false"/>
         <parameter key="multiline_text" value="false"/>
@@ -62,56 +62,56 @@
           <parameter key="21" value="ban4.true.polynominal.attribute"/>
           <parameter key="22" value="ban5.true.polynominal.attribute"/>
           <parameter key="23" value="gamelength.true.integer.attribute"/>
-          <parameter key="24" value="result.true.integer.attribute"/>
+          <parameter key="24" value="result.true.binominal.attribute"/>
           <parameter key="25" value="kills.true.integer.attribute"/>
           <parameter key="26" value="deaths.true.integer.attribute"/>
           <parameter key="27" value="assists.true.integer.attribute"/>
           <parameter key="28" value="teamkills.true.integer.attribute"/>
           <parameter key="29" value="teamdeaths.true.integer.attribute"/>
-          <parameter key="30" value="doublekills.true.polynominal.attribute"/>
-          <parameter key="31" value="triplekills.true.polynominal.attribute"/>
-          <parameter key="32" value="quadrakills.true.polynominal.attribute"/>
-          <parameter key="33" value="pentakills.true.polynominal.attribute"/>
+          <parameter key="30" value="doublekills.true.real.attribute"/>
+          <parameter key="31" value="triplekills.true.real.attribute"/>
+          <parameter key="32" value="quadrakills.true.real.attribute"/>
+          <parameter key="33" value="pentakills.true.real.attribute"/>
           <parameter key="34" value="firstblood.true.integer.attribute"/>
           <parameter key="35" value="firstbloodkill.true.integer.attribute"/>
-          <parameter key="36" value="firstbloodassist.true.polynominal.attribute"/>
-          <parameter key="37" value="firstbloodvictim.true.polynominal.attribute"/>
+          <parameter key="36" value="firstbloodassist.true.real.attribute"/>
+          <parameter key="37" value="firstbloodvictim.true.real.attribute"/>
           <parameter key="38" value="team kpm.true.real.attribute"/>
           <parameter key="39" value="ckpm.true.real.attribute"/>
-          <parameter key="40" value="firstdragon.true.polynominal.attribute"/>
+          <parameter key="40" value="firstdragon.true.real.attribute"/>
           <parameter key="41" value="dragons.true.integer.attribute"/>
           <parameter key="42" value="opp_dragons.true.integer.attribute"/>
-          <parameter key="43" value="elementaldrakes.true.polynominal.attribute"/>
-          <parameter key="44" value="opp_elementaldrakes.true.polynominal.attribute"/>
-          <parameter key="45" value="infernals.true.polynominal.attribute"/>
-          <parameter key="46" value="mountains.true.polynominal.attribute"/>
-          <parameter key="47" value="clouds.true.polynominal.attribute"/>
-          <parameter key="48" value="oceans.true.polynominal.attribute"/>
-          <parameter key="49" value="chemtechs.true.polynominal.attribute"/>
-          <parameter key="50" value="hextechs.true.polynominal.attribute"/>
-          <parameter key="51" value="dragons (type unknown).true.integer.attribute"/>
-          <parameter key="52" value="elders.true.polynominal.attribute"/>
-          <parameter key="53" value="opp_elders.true.polynominal.attribute"/>
-          <parameter key="54" value="firstherald.true.polynominal.attribute"/>
-          <parameter key="55" value="heralds.true.polynominal.attribute"/>
-          <parameter key="56" value="opp_heralds.true.polynominal.attribute"/>
-          <parameter key="57" value="firstbaron.true.polynominal.attribute"/>
+          <parameter key="43" value="elementaldrakes.true.real.attribute"/>
+          <parameter key="44" value="opp_elementaldrakes.true.real.attribute"/>
+          <parameter key="45" value="infernals.true.real.attribute"/>
+          <parameter key="46" value="mountains.true.real.attribute"/>
+          <parameter key="47" value="clouds.true.real.attribute"/>
+          <parameter key="48" value="oceans.true.real.attribute"/>
+          <parameter key="49" value="chemtechs.true.real.attribute"/>
+          <parameter key="50" value="hextechs.true.real.attribute"/>
+          <parameter key="51" value="dragons (type unknown).true.real.attribute"/>
+          <parameter key="52" value="elders.true.real.attribute"/>
+          <parameter key="53" value="opp_elders.true.real.attribute"/>
+          <parameter key="54" value="firstherald.true.real.attribute"/>
+          <parameter key="55" value="heralds.true.real.attribute"/>
+          <parameter key="56" value="opp_heralds.true.real.attribute"/>
+          <parameter key="57" value="firstbaron.true.real.attribute"/>
           <parameter key="58" value="barons.true.integer.attribute"/>
           <parameter key="59" value="opp_barons.true.integer.attribute"/>
-          <parameter key="60" value="firsttower.true.polynominal.attribute"/>
+          <parameter key="60" value="firsttower.true.real.attribute"/>
           <parameter key="61" value="towers.true.integer.attribute"/>
           <parameter key="62" value="opp_towers.true.integer.attribute"/>
-          <parameter key="63" value="firstmidtower.true.polynominal.attribute"/>
-          <parameter key="64" value="firsttothreetowers.true.polynominal.attribute"/>
-          <parameter key="65" value="turretplates.true.polynominal.attribute"/>
-          <parameter key="66" value="opp_turretplates.true.polynominal.attribute"/>
+          <parameter key="63" value="firstmidtower.true.real.attribute"/>
+          <parameter key="64" value="firsttothreetowers.true.real.attribute"/>
+          <parameter key="65" value="turretplates.true.real.attribute"/>
+          <parameter key="66" value="opp_turretplates.true.real.attribute"/>
           <parameter key="67" value="inhibitors.true.integer.attribute"/>
           <parameter key="68" value="opp_inhibitors.true.integer.attribute"/>
           <parameter key="69" value="damagetochampions.true.integer.attribute"/>
           <parameter key="70" value="dpm.true.real.attribute"/>
           <parameter key="71" value="damageshare.true.real.attribute"/>
           <parameter key="72" value="damagetakenperminute.true.real.attribute"/>
-          <parameter key="73" value="damagemitigatedperminute.true.polynominal.attribute"/>
+          <parameter key="73" value="damagemitigatedperminute.true.real.attribute"/>
           <parameter key="74" value="wardsplaced.true.integer.attribute"/>
           <parameter key="75" value="wpm.true.real.attribute"/>
           <parameter key="76" value="wardskilled.true.integer.attribute"/>
@@ -126,41 +126,41 @@
           <parameter key="85" value="goldspent.true.integer.attribute"/>
           <parameter key="86" value="gspd.true.real.attribute"/>
           <parameter key="87" value="total cs.true.integer.attribute"/>
-          <parameter key="88" value="minionkills.true.integer.attribute"/>
-          <parameter key="89" value="monsterkills.true.integer.attribute"/>
-          <parameter key="90" value="monsterkillsownjungle.true.integer.attribute"/>
-          <parameter key="91" value="monsterkillsenemyjungle.true.integer.attribute"/>
+          <parameter key="88" value="minionkills.true.real.attribute"/>
+          <parameter key="89" value="monsterkills.true.real.attribute"/>
+          <parameter key="90" value="monsterkillsownjungle.true.real.attribute"/>
+          <parameter key="91" value="monsterkillsenemyjungle.true.real.attribute"/>
           <parameter key="92" value="cspm.true.real.attribute"/>
-          <parameter key="93" value="goldat10.true.polynominal.attribute"/>
-          <parameter key="94" value="xpat10.true.polynominal.attribute"/>
-          <parameter key="95" value="csat10.true.polynominal.attribute"/>
-          <parameter key="96" value="opp_goldat10.true.polynominal.attribute"/>
-          <parameter key="97" value="opp_xpat10.true.polynominal.attribute"/>
-          <parameter key="98" value="opp_csat10.true.polynominal.attribute"/>
-          <parameter key="99" value="golddiffat10.true.polynominal.attribute"/>
-          <parameter key="100" value="xpdiffat10.true.polynominal.attribute"/>
-          <parameter key="101" value="csdiffat10.true.polynominal.attribute"/>
-          <parameter key="102" value="killsat10.true.polynominal.attribute"/>
-          <parameter key="103" value="assistsat10.true.polynominal.attribute"/>
-          <parameter key="104" value="deathsat10.true.polynominal.attribute"/>
-          <parameter key="105" value="opp_killsat10.true.polynominal.attribute"/>
-          <parameter key="106" value="opp_assistsat10.true.polynominal.attribute"/>
-          <parameter key="107" value="opp_deathsat10.true.polynominal.attribute"/>
-          <parameter key="108" value="goldat15.true.polynominal.attribute"/>
-          <parameter key="109" value="xpat15.true.polynominal.attribute"/>
-          <parameter key="110" value="csat15.true.polynominal.attribute"/>
-          <parameter key="111" value="opp_goldat15.true.polynominal.attribute"/>
-          <parameter key="112" value="opp_xpat15.true.polynominal.attribute"/>
-          <parameter key="113" value="opp_csat15.true.polynominal.attribute"/>
-          <parameter key="114" value="golddiffat15.true.polynominal.attribute"/>
-          <parameter key="115" value="xpdiffat15.true.polynominal.attribute"/>
-          <parameter key="116" value="csdiffat15.true.polynominal.attribute"/>
-          <parameter key="117" value="killsat15.true.polynominal.attribute"/>
-          <parameter key="118" value="assistsat15.true.polynominal.attribute"/>
-          <parameter key="119" value="deathsat15.true.polynominal.attribute"/>
-          <parameter key="120" value="opp_killsat15.true.polynominal.attribute"/>
-          <parameter key="121" value="opp_assistsat15.true.polynominal.attribute"/>
-          <parameter key="122" value="opp_deathsat15.true.polynominal.attribute"/>
+          <parameter key="93" value="goldat10.true.real.attribute"/>
+          <parameter key="94" value="xpat10.true.real.attribute"/>
+          <parameter key="95" value="csat10.true.real.attribute"/>
+          <parameter key="96" value="opp_goldat10.true.real.attribute"/>
+          <parameter key="97" value="opp_xpat10.true.real.attribute"/>
+          <parameter key="98" value="opp_csat10.true.real.attribute"/>
+          <parameter key="99" value="golddiffat10.true.real.attribute"/>
+          <parameter key="100" value="xpdiffat10.true.real.attribute"/>
+          <parameter key="101" value="csdiffat10.true.real.attribute"/>
+          <parameter key="102" value="killsat10.true.real.attribute"/>
+          <parameter key="103" value="assistsat10.true.real.attribute"/>
+          <parameter key="104" value="deathsat10.true.real.attribute"/>
+          <parameter key="105" value="opp_killsat10.true.real.attribute"/>
+          <parameter key="106" value="opp_assistsat10.true.real.attribute"/>
+          <parameter key="107" value="opp_deathsat10.true.real.attribute"/>
+          <parameter key="108" value="goldat15.true.real.attribute"/>
+          <parameter key="109" value="xpat15.true.real.attribute"/>
+          <parameter key="110" value="csat15.true.real.attribute"/>
+          <parameter key="111" value="opp_goldat15.true.real.attribute"/>
+          <parameter key="112" value="opp_xpat15.true.real.attribute"/>
+          <parameter key="113" value="opp_csat15.true.real.attribute"/>
+          <parameter key="114" value="golddiffat15.true.real.attribute"/>
+          <parameter key="115" value="xpdiffat15.true.real.attribute"/>
+          <parameter key="116" value="csdiffat15.true.real.attribute"/>
+          <parameter key="117" value="killsat15.true.real.attribute"/>
+          <parameter key="118" value="assistsat15.true.real.attribute"/>
+          <parameter key="119" value="deathsat15.true.real.attribute"/>
+          <parameter key="120" value="opp_killsat15.true.real.attribute"/>
+          <parameter key="121" value="opp_assistsat15.true.real.attribute"/>
+          <parameter key="122" value="opp_deathsat15.true.real.attribute"/>
         </list>
         <parameter key="read_not_matching_values_as_missings" value="false"/>
       </operator>
@@ -179,20 +179,66 @@
         <parameter key="type" value="exclude attributes"/>
         <parameter key="attribute_filter_type" value="a subset"/>
         <parameter key="select_attribute" value=""/>
-        <parameter key="select_subset" value="date␞datacompleteness"/>
+        <parameter key="select_subset" value="champion␞damageshare␞datacompleteness␞date␞earnedgoldshare␞firstbloodassist␞firstbloodkill␞firstbloodvictim␞league␞monsterkills␞monsterkillsenemyjungle␞monsterkillsownjungle␞participantid␞patch␞playerid␞playername␞playoffs␞position␞split␞teamid␞teamname␞total cs␞url␞year␞ď»żgameid␞dragons (type unknown)"/>
         <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
       </operator>
-      <operator activated="true" class="blending:set_role" compatibility="10.4.000" expanded="true" height="82" name="Set Role" width="90" x="447" y="136">
-        <list key="set_roles"/>
+      <operator activated="true" class="blending:set_role" compatibility="10.4.000" expanded="true" height="82" name="Set Role" width="90" x="581" y="136">
+        <list key="set_roles">
+          <parameter key="result" value="label"/>
+        </list>
+      </operator>
+      <operator activated="true" class="nominal_to_binominal" compatibility="10.4.000" expanded="true" height="103" name="Nominal to Binominal" width="90" x="715" y="136">
+        <parameter key="return_preprocessing_model" value="false"/>
+        <parameter key="attribute_filter_type" value="single"/>
+        <parameter key="attribute" value="side"/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="nominal"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="file_path"/>
+        <parameter key="block_type" value="single_value"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="single_value"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="transform_binominal" value="false"/>
+        <parameter key="use_underscore_in_name" value="false"/>
+      </operator>
+      <operator activated="true" class="blending:split_data" compatibility="10.4.000" expanded="true" height="103" name="Split Data" width="90" x="849" y="136">
+        <enumeration key="partitions">
+          <parameter key="ratio" value="0.7"/>
+          <parameter key="ratio" value="0.3"/>
+        </enumeration>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+      </operator>
+      <operator activated="true" class="annotate" compatibility="10.4.000" expanded="true" height="68" name="Annotate (2)" width="90" x="380" y="289">
+        <list key="annotations">
+          <parameter key="Source" value="Test"/>
+        </list>
+        <parameter key="duplicate_annotations" value="overwrite"/>
+      </operator>
+      <operator activated="true" class="annotate" compatibility="10.4.000" expanded="true" height="68" name="Annotate" width="90" x="380" y="391">
+        <list key="annotations">
+          <parameter key="Source" value="Train"/>
+        </list>
+        <parameter key="duplicate_annotations" value="overwrite"/>
       </operator>
       <connect from_op="Read CSV" from_port="output" to_op="Filter Examples" to_port="example set input"/>
       <connect from_op="Filter Examples" from_port="example set output" to_op="Select Attributes" to_port="example set input"/>
       <connect from_op="Select Attributes" from_port="example set output" to_op="Set Role" to_port="example set input"/>
-      <connect from_op="Set Role" from_port="example set output" to_port="result 1"/>
+      <connect from_op="Set Role" from_port="example set output" to_op="Nominal to Binominal" to_port="example set input"/>
+      <connect from_op="Nominal to Binominal" from_port="example set output" to_op="Split Data" to_port="example set"/>
+      <connect from_op="Split Data" from_port="partition 1" to_op="Annotate" to_port="input"/>
+      <connect from_op="Split Data" from_port="partition 2" to_op="Annotate (2)" to_port="input"/>
+      <connect from_op="Annotate (2)" from_port="output" to_port="result 1"/>
+      <connect from_op="Annotate" from_port="output" to_port="result 2"/>
       <portSpacing port="source_input 1" spacing="0"/>
       <portSpacing port="sink_result 1" spacing="0"/>
       <portSpacing port="sink_result 2" spacing="0"/>
-      <description align="center" color="purple" colored="true" height="83" resized="true" width="318" x="65" y="13">data source:&lt;br&gt;https://www.kaggle.com/datasets/barthetur&lt;br/&gt;/league-of-legends-2024-competitive-game-dataset</description>
+      <portSpacing port="sink_result 3" spacing="0"/>
+      <description align="center" color="purple" colored="true" height="83" resized="true" width="318" x="65" y="13">data source:&lt;br&gt;https://www.kaggle.com/datasets/barthetur&lt;br&gt;/league-of-legends-2024-competitive-game-dataset</description>
       <description align="center" color="yellow" colored="false" height="296" resized="true" width="285" x="29" y="265">TODO:&lt;br&gt;- mi a c&amp;#233;l? (pl: team win, champion win)&lt;br&gt;- adatok sz&amp;#369;r&amp;#233;se, &amp;#225;tnevez&amp;#233;s&lt;br&gt;- cimk&amp;#233;z&amp;#233;s (label)&lt;br&gt;- multiply&lt;br&gt;- split&lt;br&gt;- fel&amp;#252;gyelt vagy nem&lt;br&gt;- modell illeszt&amp;#233;s (NN, d&amp;#246;nt&amp;#233;si fa, kNN)&lt;br&gt;- hyperparam loop&lt;br&gt;- performance (acc, roc)&lt;br&gt;- doksi &amp;#237;r&amp;#225;s&lt;br&gt;</description>
     </process>
   </operator>
