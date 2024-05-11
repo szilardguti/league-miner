@@ -13,7 +13,7 @@
     <parameter key="encoding" value="SYSTEM"/>
     <process expanded="true">
       <operator activated="true" class="read_csv" compatibility="10.4.000" expanded="true" height="68" name="Read CSV" width="90" x="45" y="85">
-        <parameter key="csv_file" value="C:/Users/berci/OneDrive/Dokumentumok/AltairRapidMiner/AI Studio/Local Repository/data/2024_LoL_esports_match_data_from_OraclesElixir1.csv"/>
+        <parameter key="csv_file" value="C:/Users/kliens/Documents/AltairRapidMiner/AI Studio/Local Repository/data/2024_LoL_esports_match_data_from_OraclesElixir1.csv"/>
         <parameter key="column_separators" value=";"/>
         <parameter key="trim_lines" value="false"/>
         <parameter key="multiline_text" value="false"/>
@@ -72,13 +72,13 @@
           <parameter key="31" value="triplekills.true.real.attribute"/>
           <parameter key="32" value="quadrakills.true.real.attribute"/>
           <parameter key="33" value="pentakills.true.real.attribute"/>
-          <parameter key="34" value="firstblood.true.integer.attribute"/>
-          <parameter key="35" value="firstbloodkill.true.integer.attribute"/>
-          <parameter key="36" value="firstbloodassist.true.real.attribute"/>
-          <parameter key="37" value="firstbloodvictim.true.real.attribute"/>
+          <parameter key="34" value="firstblood.true.binominal.attribute"/>
+          <parameter key="35" value="firstbloodkill.true.binominal.attribute"/>
+          <parameter key="36" value="firstbloodassist.true.binominal.attribute"/>
+          <parameter key="37" value="firstbloodvictim.true.binominal.attribute"/>
           <parameter key="38" value="team kpm.true.real.attribute"/>
           <parameter key="39" value="ckpm.true.real.attribute"/>
-          <parameter key="40" value="firstdragon.true.real.attribute"/>
+          <parameter key="40" value="firstdragon.true.binominal.attribute"/>
           <parameter key="41" value="dragons.true.integer.attribute"/>
           <parameter key="42" value="opp_dragons.true.integer.attribute"/>
           <parameter key="43" value="elementaldrakes.true.real.attribute"/>
@@ -92,17 +92,17 @@
           <parameter key="51" value="dragons (type unknown).true.real.attribute"/>
           <parameter key="52" value="elders.true.real.attribute"/>
           <parameter key="53" value="opp_elders.true.real.attribute"/>
-          <parameter key="54" value="firstherald.true.real.attribute"/>
+          <parameter key="54" value="firstherald.true.binominal.attribute"/>
           <parameter key="55" value="heralds.true.real.attribute"/>
           <parameter key="56" value="opp_heralds.true.real.attribute"/>
-          <parameter key="57" value="firstbaron.true.real.attribute"/>
+          <parameter key="57" value="firstbaron.true.binominal.attribute"/>
           <parameter key="58" value="barons.true.integer.attribute"/>
           <parameter key="59" value="opp_barons.true.integer.attribute"/>
-          <parameter key="60" value="firsttower.true.real.attribute"/>
+          <parameter key="60" value="firsttower.true.binominal.attribute"/>
           <parameter key="61" value="towers.true.integer.attribute"/>
           <parameter key="62" value="opp_towers.true.integer.attribute"/>
-          <parameter key="63" value="firstmidtower.true.real.attribute"/>
-          <parameter key="64" value="firsttothreetowers.true.real.attribute"/>
+          <parameter key="63" value="firstmidtower.true.binominal.attribute"/>
+          <parameter key="64" value="firsttothreetowers.true.binominal.attribute"/>
           <parameter key="65" value="turretplates.true.real.attribute"/>
           <parameter key="66" value="opp_turretplates.true.real.attribute"/>
           <parameter key="67" value="inhibitors.true.integer.attribute"/>
@@ -164,7 +164,7 @@
         </list>
         <parameter key="read_not_matching_values_as_missings" value="false"/>
       </operator>
-      <operator activated="true" class="filter_examples" compatibility="10.4.000" expanded="true" height="103" name="Filter Examples" width="90" x="179" y="136">
+      <operator activated="true" class="filter_examples" compatibility="10.4.000" expanded="true" height="103" name="Filter Teams" width="90" x="45" y="238">
         <parameter key="parameter_expression" value=""/>
         <parameter key="condition_class" value="custom_filters"/>
         <parameter key="invert_filter" value="false"/>
@@ -175,19 +175,19 @@
         <parameter key="filters_logic_and" value="true"/>
         <parameter key="filters_check_metadata" value="true"/>
       </operator>
-      <operator activated="true" class="blending:select_attributes" compatibility="10.4.000" expanded="true" height="82" name="Select Attributes" width="90" x="313" y="136">
+      <operator activated="true" class="blending:select_attributes" compatibility="10.4.000" expanded="true" height="82" name="Exclude Attributes" width="90" x="179" y="238">
         <parameter key="type" value="exclude attributes"/>
         <parameter key="attribute_filter_type" value="a subset"/>
         <parameter key="select_attribute" value=""/>
         <parameter key="select_subset" value="champion␞damageshare␞datacompleteness␞date␞earnedgoldshare␞firstbloodassist␞firstbloodkill␞firstbloodvictim␞league␞monsterkills␞monsterkillsenemyjungle␞monsterkillsownjungle␞participantid␞patch␞playerid␞playername␞playoffs␞position␞split␞teamid␞teamname␞total cs␞url␞year␞ď»żgameid␞dragons (type unknown)"/>
         <parameter key="also_apply_to_special_attributes_(id,_label..)" value="false"/>
       </operator>
-      <operator activated="true" class="blending:set_role" compatibility="10.4.000" expanded="true" height="82" name="Set Role" width="90" x="581" y="136">
+      <operator activated="true" class="blending:set_role" compatibility="10.4.000" expanded="true" height="82" name="Set Label Attrib." width="90" x="313" y="238">
         <list key="set_roles">
           <parameter key="result" value="label"/>
         </list>
       </operator>
-      <operator activated="true" class="nominal_to_binominal" compatibility="10.4.000" expanded="true" height="103" name="Nominal to Binominal" width="90" x="715" y="136">
+      <operator activated="true" class="nominal_to_binominal" compatibility="10.4.000" expanded="true" height="103" name="Nominal to Binominal" width="90" x="447" y="238">
         <parameter key="return_preprocessing_model" value="false"/>
         <parameter key="attribute_filter_type" value="single"/>
         <parameter key="attribute" value="side"/>
@@ -204,7 +204,7 @@
         <parameter key="transform_binominal" value="false"/>
         <parameter key="use_underscore_in_name" value="false"/>
       </operator>
-      <operator activated="true" class="blending:split_data" compatibility="10.4.000" expanded="true" height="103" name="Split Data" width="90" x="849" y="136">
+      <operator activated="true" class="blending:split_data" compatibility="10.4.000" expanded="true" height="103" name="Split Data" width="90" x="581" y="238">
         <enumeration key="partitions">
           <parameter key="ratio" value="0.7"/>
           <parameter key="ratio" value="0.3"/>
@@ -213,33 +213,32 @@
         <parameter key="use_local_random_seed" value="false"/>
         <parameter key="local_random_seed" value="1992"/>
       </operator>
-      <operator activated="true" class="annotate" compatibility="10.4.000" expanded="true" height="68" name="Annotate (2)" width="90" x="380" y="289">
+      <operator activated="true" class="annotate" compatibility="10.4.000" expanded="true" height="68" name="Annotate Test" width="90" x="715" y="289">
         <list key="annotations">
           <parameter key="Source" value="Test"/>
         </list>
         <parameter key="duplicate_annotations" value="overwrite"/>
       </operator>
-      <operator activated="true" class="annotate" compatibility="10.4.000" expanded="true" height="68" name="Annotate" width="90" x="380" y="391">
+      <operator activated="true" class="annotate" compatibility="10.4.000" expanded="true" height="68" name="Annotate Train" width="90" x="715" y="187">
         <list key="annotations">
           <parameter key="Source" value="Train"/>
         </list>
         <parameter key="duplicate_annotations" value="overwrite"/>
       </operator>
-      <connect from_op="Read CSV" from_port="output" to_op="Filter Examples" to_port="example set input"/>
-      <connect from_op="Filter Examples" from_port="example set output" to_op="Select Attributes" to_port="example set input"/>
-      <connect from_op="Select Attributes" from_port="example set output" to_op="Set Role" to_port="example set input"/>
-      <connect from_op="Set Role" from_port="example set output" to_op="Nominal to Binominal" to_port="example set input"/>
+      <connect from_op="Read CSV" from_port="output" to_op="Filter Teams" to_port="example set input"/>
+      <connect from_op="Filter Teams" from_port="example set output" to_op="Exclude Attributes" to_port="example set input"/>
+      <connect from_op="Exclude Attributes" from_port="example set output" to_op="Set Label Attrib." to_port="example set input"/>
+      <connect from_op="Set Label Attrib." from_port="example set output" to_op="Nominal to Binominal" to_port="example set input"/>
       <connect from_op="Nominal to Binominal" from_port="example set output" to_op="Split Data" to_port="example set"/>
-      <connect from_op="Split Data" from_port="partition 1" to_op="Annotate" to_port="input"/>
-      <connect from_op="Split Data" from_port="partition 2" to_op="Annotate (2)" to_port="input"/>
-      <connect from_op="Annotate (2)" from_port="output" to_port="result 1"/>
-      <connect from_op="Annotate" from_port="output" to_port="result 2"/>
+      <connect from_op="Split Data" from_port="partition 1" to_op="Annotate Train" to_port="input"/>
+      <connect from_op="Split Data" from_port="partition 2" to_op="Annotate Test" to_port="input"/>
+      <connect from_op="Annotate Test" from_port="output" to_port="result 2"/>
+      <connect from_op="Annotate Train" from_port="output" to_port="result 1"/>
       <portSpacing port="source_input 1" spacing="0"/>
       <portSpacing port="sink_result 1" spacing="0"/>
       <portSpacing port="sink_result 2" spacing="0"/>
       <portSpacing port="sink_result 3" spacing="0"/>
       <description align="center" color="purple" colored="true" height="83" resized="true" width="318" x="65" y="13">data source:&lt;br&gt;https://www.kaggle.com/datasets/barthetur&lt;br&gt;/league-of-legends-2024-competitive-game-dataset</description>
-      <description align="center" color="yellow" colored="false" height="296" resized="true" width="285" x="29" y="265">TODO:&lt;br&gt;- mi a c&amp;#233;l? (pl: team win, champion win)&lt;br&gt;- adatok sz&amp;#369;r&amp;#233;se, &amp;#225;tnevez&amp;#233;s&lt;br&gt;- cimk&amp;#233;z&amp;#233;s (label)&lt;br&gt;- multiply&lt;br&gt;- split&lt;br&gt;- fel&amp;#252;gyelt vagy nem&lt;br&gt;- modell illeszt&amp;#233;s (NN, d&amp;#246;nt&amp;#233;si fa, kNN)&lt;br&gt;- hyperparam loop&lt;br&gt;- performance (acc, roc)&lt;br&gt;- doksi &amp;#237;r&amp;#225;s&lt;br&gt;</description>
     </process>
   </operator>
 </process>
